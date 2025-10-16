@@ -1,0 +1,41 @@
+site_name: Tutorial CPython en Español
+site_url: http://localhost:8000
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: SofieTorch/cpython-es
+theme:
+  name: material
+  features:
+    - navigation.footer
+  palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+
+nav:
+  - index.md
+  - getting-started.md
+  - setting-up-your-environment.md
+  - python-grammar.md
+  - changing-python-to-es.md
+  - next-steps.md
+  - references.md
